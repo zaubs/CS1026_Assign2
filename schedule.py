@@ -77,7 +77,7 @@ def calculate_mark_averages_by_section(schedule, section_no): # Calculates the a
             project_avg = project_mark_sum / student_count
             exam_avg = exam_mark_sum / student_count
 
-    return (f"{midterm_avg:.2f}", f"{project_avg:.2f}", f"{exam_avg:.2f}")  # Outputs the average marks between all enrolled students, which is returned in a tuple 
+    return (round(midterm_avg, 2), round(project_avg, 2), round(exam_avg, 2))  # Outputs the average marks between all enrolled students, which is returned in a tuple 
 
 def get_paid_students(schedule): # Checks if all students at the school had paid their tuition 
     paid_students = []
