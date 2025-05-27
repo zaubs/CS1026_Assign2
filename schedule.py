@@ -195,12 +195,12 @@ def main():
     print("Student numbers who paid their tuition:",paid_students)
 
     # section_no = 'Cal558'  # Example of section number
-    section_no = str(input())
+    section_no = str(input()).title()
     unique_majors = get_unique_majors_from_one_section(schedule, section_no) 
     print("Unique major names for students in specified section:",unique_majors) 
 
     # section_nos = ['Cal558', 'Sta647', 'Env807']  # Example list of section numbers
-    section_nos = str(input()).split()
+    section_nos = str(input()).title().split()
     unique_majors = get_unique_majors(schedule, section_nos)
     print("Unique major names for students in specified sections:",unique_majors)
 
