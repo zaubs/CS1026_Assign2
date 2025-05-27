@@ -186,7 +186,7 @@ def main():
 
 
     # section_no = 'Dif591'  # Example section number
-    section_no = str(input())
+    section_no = str(input()).title()
     mark_averages = calculate_mark_averages_by_section(schedule, section_no)
     print("Mark averages:",mark_averages)
 
