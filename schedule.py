@@ -146,7 +146,7 @@ def find_sections_exceeding_capacity(schedule, wings): # Checks the courses in t
         course_no = course[0]
         capacity = course[5] # variable for the course capacity
         student_info = course[6]
-        course_wing = course[4][3] # String reading the wing letter of each course
+        course_wing = course[4][-1] # String reading the wing letter of each course
         if course_wing.strip() in wings: # Checks if wing letter is in the provided list of wing letters
             for student in student_info:
                 student_count += 1 # counts the number of students enrolled in the course
